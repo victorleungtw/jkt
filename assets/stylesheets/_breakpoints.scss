@@ -1,0 +1,28 @@
+$viewport-small: 600px;
+$viewport-medium: 800px;
+$viewport-large: 1200px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (max-width: $viewport-small){
+      @content;
+    }
+  }
+  @else if $breakpoint == "medium" {
+    @media (max-width: $viewport-medium) {
+      @content;
+    }
+  }
+  @else if $breakpoint == "large" {
+    @media (max-width: $viewport-large){
+      @content;
+    }
+  }
+}
+
+.only-small {
+  display: none;
+  @include respond-to("small"){
+    display: block;
+  }
+}
