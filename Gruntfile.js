@@ -19,7 +19,7 @@ module.export = function(grunt) {
     },
     sass: {
       options: {
-        includePath: require('node-bourbon').includePaths
+        includePath: require('node-bourbon').includePaths,
         sourceMap: true
       },
       dist: {

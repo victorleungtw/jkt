@@ -2,12 +2,13 @@
 
 /*** Base Elements ***/
 body {
-  background-color: #f7f7f7;
+  background-image: url("../images/macbook.jpg");
+  background-repeat: no-repeat;
 }
 
 /*** Introduction ***/
 .hello {
-  color: #2a2a2a;
+  color: #d5d5d5;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,6 +63,26 @@ body {
   text-decoration: none;
 }
 
+#navigation .menu-item-2 a {
+  color: #F7003F;
+  letter-spacing: 0.5px;
+}
+
+#navigation .menu-item-3 a {
+  color: #F7003F;
+  letter-spacing: 0.5px;
+}
+
+#navigation .menu-item-4 a {
+  color: #F7003F;
+  letter-spacing: 0.5px;
+}
+
+#navigation .menu-item-5 a {
+  color: #F7003F;
+  letter-spacing: 0.5px;
+}
+
 #navigation ul li {
   float: left;
   margin: 0;
@@ -70,14 +91,18 @@ body {
 }
 
 #navigation ul li.menu-item {
-  background: #ddd;
+  background-color: #ddd;
 }
 
 #navigation ul li:hover {
-  background: #f6f6f6;
+  text-decoration: underline;
+  /*border-bottom: 2px solid #ddd;*/
 }
 
 #navigation ul ul {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 4px;
   display: none;
   left: 0;
   padding: 0;
@@ -103,4 +128,38 @@ body {
 
 #navigation ul li:hover > ul {
   display: block;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*** Chrome and Safari ***/
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*** Firefox ***/
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*** Internet Explorer ***/
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*** Opera ***/
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
