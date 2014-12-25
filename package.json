@@ -23,7 +23,6 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jscs": "^1.0.0",
     "grunt-sass": "^0.17.0",
-    "minify": "^1.4.3",
     "node-bourbon": "^1.2.3"
   }
 }

@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/*** Base Elements ***/
+body {
+  background-color: #f7f7f7;
+}
+
+/*** Introduction ***/
+h1 {
+  color: #2a2a2a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume-box {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 4px;
+}
