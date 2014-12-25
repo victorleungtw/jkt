@@ -70,5 +70,15 @@
       </li>
     </ul>
   </nav>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#navigation").click(function() {
+        $("body").fadeOut(2000);
+        $("body").fadeIn(4000);
+      });
+    });
+  </script>
 </body>
 </html>
