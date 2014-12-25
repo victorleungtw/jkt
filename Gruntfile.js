@@ -7,14 +7,14 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     jshint: {
-      all: ['../javascripts/*.js'],
+      all: ['*.js'],
       options: {
         jshintrc: true
       }
     },
 
     jscs: {
-      src: ['./*.js', 'server.js'],
+      src: ['../*.js', 'server.js'],
       options: {
         config: '.jscsrc'
       }

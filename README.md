@@ -1,5 +1,3 @@
-Joe K. Teo
+Personal Webpage
 ==========
-https://travis-ci.org/joekteo/jkt.svg?branch=background
-
-personal webpage
+<img src="https://travis-ci.org/joekteo/jkt.svg?branch=background">
