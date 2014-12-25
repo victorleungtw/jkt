@@ -1,22 +1,25 @@
 'use strict';
 
-module.export = function(grunt) {
+module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jscs');
   grunt.loadNpmTasks('grunt-sass');
 
   grunt.initConfig({
     jshint: {
-      all: srcFiles,
+      all: ['../javascripts/*.js'],
       options: {
         jshintrc: true
       }
     },
+
     jscs: {
-      src: srcFiles,
+      src: ['./*.js', 'server.js'],
       options: {
         config: '.jscsrc'
+      }
     },
+
     sass: {
       options: {
         includePath: require('node-bourbon').includePaths,
