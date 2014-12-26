@@ -55,7 +55,7 @@ body {
 #navigation ul a {
   color: #333;
   display: block;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 32px;
@@ -65,7 +65,7 @@ body {
 
 #navigation .menu-item-2 a {
   color: #F7003F;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.35px;
 }
 
 #navigation .menu-item-3 a {
@@ -162,4 +162,30 @@ body {
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+.menu-item-3-info {
+  background-color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 4px;
+  display: none;
+  left: 566px;
+  list-style: none;
+  margin: 50px 0;
+  opacity: 0.7;
+  padding: 10px 20px 10px 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 330px;
+  width: 44.3%;
+}
+
+.menu-item-3-p {
+  color: #333;
+  font-size: 14px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300px;
+  line-height: 160%;
+  padding: 0 15px;
 }
