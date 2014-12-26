@@ -9,7 +9,9 @@
     "beforeEach" : false,
     "after"      : false,
     "afterEach"  : false,
-    "equal"      : false
+    "equal"      : false,
+    "$"          : false,
+    "jQuery"     : false
   },
   "globalstrict": true,
   "quotmark": false,
