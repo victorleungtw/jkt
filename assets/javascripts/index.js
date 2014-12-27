@@ -14,13 +14,15 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.menu-item-3').click(function() {
+  var click = $('.menu-item-3, .about-close');
+  $(click).click(function() {
     $('.menu-item-3-content').fadeToggle();
   });
 });
 
 $(document).ready(function() {
-  $('.menu-item-4').click(function() {
+  var click = $('.menu-item-4, .resume-close');
+  $(click).click(function() {
     $('.menu-item-4-content').fadeToggle();
   });
 });
