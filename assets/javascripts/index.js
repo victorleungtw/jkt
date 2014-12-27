@@ -15,6 +15,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('.menu-item-3').click(function() {
-    $('.menu-item-3-info').fadeToggle();
+    $('.menu-item-3-content').fadeToggle();
+  });
+});
+
+$(document).ready(function() {
+  $('.menu-item-4').click(function() {
+    $('.menu-item-4-content').fadeToggle();
   });
 });
