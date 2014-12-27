@@ -26,3 +26,15 @@ $(document).ready(function() {
     $('.menu-item-4-content').fadeToggle();
   });
 });
+
+// $(document).ready(function() {
+//   var click = $('.menu-item-3, .about-close');
+//   $(click).click(function() {
+//     if ($('.menu-item-4-content').css('display') === 'inline-block') {
+//       $('.menu-item-4-content').fadeToggle();
+//       $('.menu-item-3-content').fadeToggle();
+//     } else {
+//       $('.menu-item-3-content').fadeToggle();
+//     }
+//   });
+// });
