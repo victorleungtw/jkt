@@ -191,6 +191,15 @@ body {
   padding: 0 15px;
 }
 
+.about-close {
+  color: #999;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size: 13px;
+  font-weight: 300px;
+  position: 50%;
+  text-align: center;
+}
+
 /*** Resume Scroll Box ***/
 .menu-item-4-content {
   background-color: white;
@@ -244,4 +253,13 @@ body {
 
 .title {
   margin: -19px 0 -10px 0;
+}
+
+.resume-close {
+  color: #999;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size: 13px;
+  font-weight: 300px;
+  position: 50%;
+  text-align: center;
 }
