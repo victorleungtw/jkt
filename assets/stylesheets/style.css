@@ -168,6 +168,7 @@ body {
 .menu-item-3-content {
   background-color: white;
   border-color: white;
+  border-radius: 0 20px 20px 20px;
   border-style: solid;
   border-width: 4px;
   display: none;
@@ -204,6 +205,7 @@ body {
 .menu-item-4-content {
   background-color: white;
   border-color: white;
+  border-radius: 0 20px 20px 20px;
   border-style: solid;
   border-width: 4px;
   color: #333;
