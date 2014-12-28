@@ -26,16 +26,18 @@ var jQuery = require("./../../bower_components/jquery/dist/jquery.js");
         $('.menu-item-3-content').fadeToggle();
       } else {
         $('.menu-item-3-content').fadeToggle();
+      }
+    });
+  });
 
-        var click = $('.menu-item-4, .resume-close');
-        $(click).click(function() {
-          if ($('.menu-item-3-content').is(':visible')) {
-            $('.menu-item-3-content').fadeToggle();
-            $('.menu-item-4-content').fadeToggle();
-          } else {
-            $('.menu-item-4-content').fadeToggle();
-          }
-        });
+  $(function() {
+    var click = $('.menu-item-4, .resume-close');
+    $(click).click(function() {
+      if ($('.menu-item-3-content').is(':visible')) {
+        $('.menu-item-3-content').fadeToggle();
+        $('.menu-item-4-content').fadeToggle();
+      } else {
+        $('.menu-item-4-content').fadeToggle();
       }
     });
   });
