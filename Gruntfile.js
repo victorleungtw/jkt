@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     copy:{
       assets: {
         cwd: 'assets/',
-        src: ['*.html', 'stylesheets/**/*.css', 'images/*.jpg', 'images/*.ico', 'fonts/*.eot', 'fonts/*.svg', 'fonts/*.ttf', 'fonts/*.woff', 'fonts/*.otf', 'less/*.less', 'scss/*.scss'],
+        src: ['*.html', 'images/*.jpg', 'images/*.ico', 'stylesheets/**/*.css', 'stylesheets/**', 'javascripts/pace.min.js'],
         expand: true,
         dest: 'build/'
       }
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       }
     },
     jscs: {
-      src: ['./*.js', 'server.js'],
+      src: ['/*.js', 'server.js'],
       options: {
         config: '.jscsrc'
       }
@@ -69,7 +69,9 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('build:dev', ['clean:dev', 'copy:assets', 'browserify:dev']);
+  grunt.registerTask('build:dev', ['clean:dev', 'copy:assets', 'browserify:dev', 'sass']);
+  // grunt.registerTask('build:test', ['browserify:test']);
+  // grunt.registerTask('test', ['jshint', 'jscs']);
   grunt.registerTask('build', ['build:dev']);
-  grunt.registerTask('default');
+  grunt.registerTask('default', ['test']);
 };
