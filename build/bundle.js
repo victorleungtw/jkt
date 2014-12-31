@@ -49,18 +49,24 @@ var jQuery = require("./../../bower_components/jquery/dist/jquery.js");
 },{}],3:[function(require,module,exports){
 'use strict';
 
-var scrollAmount = 95;
+require("./../../bower_components/jquery/dist/jquery.js");
+// var scrollAmount = 95;
 
-$(window).on('scroll', function() {
-  if ($(window).scrollTop() >= scrollAmount && !$('nav').hasClass('fixed')) {
-    $('nav').addClass('fixed');
-  }
-  else if ($(window).scrollTop() < scrollAmount && $('nav').hasClass('fixed')) {
-   $('nav').removeClass('fixed');
-  }
-});
+// $(window).on('scroll', function() {
+//   if ($(window).scrollTop() >= scrollAmount && !$('nav').hasClass('fixed')) {
+//     $('nav').addClass('fixed');
+//   }
+//   else if ($(window).scrollTop() < scrollAmount && $('nav').hasClass('fixed')) {
+//    $('nav').removeClass('fixed');
+//   }
+// });
 
-},{}],4:[function(require,module,exports){
+(function() {
+  var p = $('#gallery').portfolio();
+  p.init();
+})();
+
+},{"./../../bower_components/jquery/dist/jquery.js":4}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
  * http://jquery.com/

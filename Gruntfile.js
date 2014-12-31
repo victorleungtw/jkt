@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     copy:{
       assets: {
         cwd: 'assets/',
-        src: ['*.html', 'images/*.jpg', 'images/*.ico', 'stylesheets/**/*.css', 'stylesheets/**', 'javascripts/pace.min.js'],
+        src: ['*.html', 'images/**', 'javascripts/**', 'stylesheets/**', 'stylesheets/**/**', 'templates/**'],
         expand: true,
         dest: 'build/'
       }
