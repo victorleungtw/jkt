@@ -1,7 +1,8 @@
-$viewport-small: 600px;
-$viewport-medium: 800px;
-$viewport-large: 1200px;
-
+$breakpoint: (
+  $viewport-small: 600px;
+  $viewport-medium: 800px;
+  $viewport-large: 1200px;
+);
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "small" {
     @media (max-width: $viewport-small){
