@@ -9,8 +9,10 @@
   <link rel="shortcut icon" href="bundle.js" type="image/x-icon">
   <link rel="icon" href="bundle.js" type="image/x-icon">
   <link rel="stylesheet" href="./stylesheets/style.css" media="all">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="./stylesheets/pace.css" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/normalize.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./stylesheets/pace.css">
+  <link href="./stylesheets/flexboxgrid-6.0.0/dist/flexboxgrid.min.css">
   <script type="text/javascript" src="bundle.js"></script>
   <script type="text/javascript" src="javascripts/pace.min.js"></script>
 <!--[if lt IE 9]>
@@ -20,14 +22,39 @@
 </head>
 
 <body>
-  <div class="page-load">
-    <div class="hello">
-      <h1>Joe Teo</h1>
-      <h2>Web Developer</h2>
-      <hr>
-    </div>
 
-    <nav id="navigation">
+  <div class="page-load">
+    <nav class="big-container">
+
+      <div class="logo">
+        <h1>Joe Teo</h1>
+      </div>
+
+      <div class="sub-container">
+        <div class="title">
+          <h2>Web Developer</h2>
+          <hr/>
+        </div>
+        <section class="nav-container">
+          <ul class="nav-items">
+          <li class="welcome-tab"><a href="#">Welcome_</a></li>
+            <li><a href="#">About_</a></li>
+            <li><a href="#">Experience_</a></li>
+            <li><a href="#">Portfolio_</a></li>
+            <li><a href="#">Contact_</a></li>
+          </ul>
+        </section>
+      </div>
+
+    </nav>
+  </div>
+
+</body>
+</html>
+
+
+
+<!--     <nav id="navigation">
       <ul>
         <li class="menu-item">
           <a href="#">Welcome_</a>
@@ -130,7 +157,4 @@
     <p class="company">Temple University Japan (Tyler School of Art)</p>
     <p class="location-date">Tokyo, Japan, 2011</p>
     <p class="title">Digital Media, Bachelor of Art</p>
-    <p class="resume-close">- close -</p>
-  </div>
-</body>
-</html>
+    <p class="resume-close">- close -</p> -->

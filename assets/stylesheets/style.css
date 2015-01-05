@@ -4,273 +4,98 @@
 body {
   background-image: url("../images/macbook.jpg");
   background-repeat: no-repeat;
-}
-
-/*** Introduction ***/
-.hello {
-  color: #d5d5d5;
   font-family: 'Montserrat', sans-serif;
 }
 
-.hello h1 {
-  float: left;
-  font-size: 90px;
-  font-weight: 800;
-  letter-spacing: -1.0px;
-  margin: 255px 40px -30px 130px;
+h1, h2 {
+  color: #d5d5d5;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
-.hello h2 {
-  float: left;
-  font-size: 55px;
+
+/*** Introduction ***/
+.big-container {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.logo {
+  border: 1px solid orange;
+  flex-grow: 1, flex-shrink: 1, flex-basis: 20em;
+}
+
+.logo h1 {
+  font-size: 5.625em;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -1px;
+  text-align: center;
+  position: relative;
+  top: 2.225em;
+  left: 0.262em;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  border: 1px solid orange;
+  width: 55%;
+}
+
+h2 {
+  font-size: 3.438em;
   font-weight: 800;
   letter-spacing: 1px;
-  line-height: 50px;
-  margin: 263px 0 0 0;
-  text-transform: uppercase;
+  line-height: 3.125em;
+  position: relative;
+  top: 3.79em;
+  padding-left: 0.57em;
 }
 
-.hello hr {
+.sub-container hr {
   background-color: #727272;
   height: 0.5px;
   margin: 0;
-  padding: 0 0 1px 0;
-  width: 48%;
+  padding: 0 0 1.05px 0;
+  width: 85.5%;
+  position: relative;
+  top: 9.26em;
+  left: 2em;
 }
 
 /*** Navbar ***/
-#navigation {
-  margin-top: 15px;
+.nav-items {
+  display: flex;
+  flex-direction: row;
 }
 
-#navigation ul {
-  float: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav-items li {
   position: relative;
-}
-
-#navigation ul a {
-  color: #333;
-  display: block;
+  top: 14.4em;
+  left: -1.2em;
   font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
-  line-height: 32px;
   padding: 0 46px;
+}
+
+.nav-items a {
+  color: #F7003F;
+  letter-spacing: 0.5px;
   text-decoration: none;
 }
 
-#navigation .menu-item-2 a {
-  color: #F7003F;
-  letter-spacing: 0.35px;
-}
-
-#navigation .menu-item-3 a {
-  color: #F7003F;
-  letter-spacing: 0.5px;
-}
-
-#navigation .menu-item-4 a {
-  color: #F7003F;
-  letter-spacing: 0.5px;
-}
-
-#navigation .menu-item-5 a {
-  color: #F7003F;
-  letter-spacing: 0.5px;
-}
-
-#navigation ul li {
-  float: left;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-#navigation ul li.menu-item {
-  background-color: #ddd;
-}
-
-#navigation ul li:hover {
-  text-decoration: underline;
-  /*border-bottom: 2px solid #ddd;*/
-}
-
-#navigation ul ul {
+.welcome-tab a {
+  color: #333;
+  background-color:#fff;
   border-color: #fff;
   border-style: solid;
-  border-width: 4px;
-  display: none;
-  left: 0;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  /*background: #fff;*/
+  border-width: 0.8em 4em;
 }
-
-#navigation ul ul li {
-  float: none;
-  width: 200px;
-}
-
-#navigation ul ul a {
-  line-height: 120%;
-  padding: 10px 15px;
-}
-
-#navigation ul ul ul {
-  top: 0;
-  left: 100%;
-}
-
-#navigation ul li:hover > ul {
-  display: block;
-  animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/*** Chrome and Safari ***/
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/*** Firefox ***/
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/*** Internet Explorer ***/
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/*** Opera ***/
-@-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/*** About Box Content ***/
-.menu-item-3-content {
-  background-color: white;
-  border-color: white;
-  border-radius: 0 20px 20px 20px;
-  border-style: solid;
-  border-width: 4px;
-  display: none;
-  left: 566px;
-  list-style: none;
-  margin: 50px 0;
-  opacity: 0.7;
-  padding: 10px 20px;
-  position: absolute;
-  text-decoration: none;
-  top: 330px;
-  width: 44.3%;
-}
-
-.menu-item-3-p {
-  color: #333;
-  font-size: 14px;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-weight: 300px;
-  line-height: 160%;
-  padding: 0 15px;
-}
-
-.about-close {
-  color: #999;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-size: 13px;
-  font-weight: 300px;
-  position: 50%;
-  text-align: center;
-}
-
-/*** Resume Scroll Box ***/
-.menu-item-4-content {
-  background-color: white;
-  border-color: white;
-  border-radius: 0 20px 20px 20px;
-  border-style: solid;
-  border-width: 4px;
-  color: #333;
-  display: none;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-size: 14px;
-  font-weight: 300px;
-  height: 330px;
-  left: 566px;
-  list-style: none;
-  line-height: 160%;
-  margin: 50px 0;
-  opacity: 0.7;
-  overflow: auto;
-  padding: 10px 20px;
-  position: absolute;
-  text-decoration: none;
-  top: 330px;
-  width: 44.3%;
-}
-
-.menu-item-4-content h1 {
-  font-size: 20px;
-  margin-bottom: -9px;
-}
-
-.menu-item-4-content h2 {
-  font-size: 18px;
-  margin: 20px 0 -15px 0;
-  text-decoration: underline;
-}
-
-.skill-list td {
-  font-size: 14px;
-  padding-right: 75px;
-}
-
-.company {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.location-date {
-  font-size: 15px;
-  margin-top: -19px;
-}
-
-.title {
-  margin: -19px 0 -10px 0;
-}
-
-.resume-close {
-  color: #999;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-size: 13px;
-  font-weight: 300px;
-  position: 50%;
-  text-align: center;
-}
-
-
-/*// example;
-.subnav {
-  padding: 5px;
-  @media (min-width: 500px) {
-    padding: 25px;
-  }
-}*/

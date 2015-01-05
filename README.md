@@ -4,11 +4,13 @@ Personal Webpage
 
 # TODO
 - [X] Add if else to Toggle
-- [ ] Add Nav Bar
 - [ ] Add Work Photos
-- [ ] Design Page Layout for Portfolio Pages
+- [ ] Make It Responsive
 
 
 ## Next
-- [ ] Make It Responsive
+- [ ] Add Nav Bar to Portfolio Pages
+- [ ] Design Page Layout for Portfolio Pages
 - [ ] Launch on Heroku
+
+Special thanks to Loann Lam (https://github.com/lolanysf)
