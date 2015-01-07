@@ -14,19 +14,18 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-
 /*** Introduction ***/
 .big-container {
-  border: 1px solid blue;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   align-items: flex-start;
+/*  border: 1px solid blue;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
 }
 
 .logo {
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
   flex-grow: 1, flex-shrink: 1, flex-basis: 20em;
 }
 
@@ -34,18 +33,18 @@ h1, h2 {
   font-size: 5.625em;
   font-weight: 800;
   text-decoration: none;
-  letter-spacing: -1px;
-  text-align: center;
-  position: relative;
-  top: 2.225em;
   left: 0.262em;
+  letter-spacing: -1px;
+  position: relative;
+  text-align: center;
+  top: 2.225em;
 }
 
 .sub-container {
+  /*border: 1px solid orange;*/
   display: flex;
   flex-direction: column;
   padding-left: 2%;
-  border: 1px solid orange;
   width: 55%;
 }
 
@@ -54,20 +53,20 @@ h2 {
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 3.125em;
+  padding-left: 0.57em;
   position: relative;
   top: 3.79em;
-  padding-left: 0.57em;
 }
 
 .sub-container hr {
   background-color: #727272;
   height: 0.5px;
+  left: 2em;
   margin: 0;
   padding: 0 0 1.05px 0;
-  width: 85.5%;
   position: relative;
   top: 9.26em;
-  left: 2em;
+  width: 85.5%;
 }
 
 /*** Navbar ***/
@@ -77,13 +76,13 @@ h2 {
 }
 
 .nav-items li {
-  position: relative;
-  top: 14.4em;
-  left: -1.2em;
   font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
-  padding: 0 46px;
+  left: 4.4%;
+  margin-right: 12.7%;
+  position: relative;
+  top: 14em;
 }
 
 .nav-items a {
@@ -92,10 +91,6 @@ h2 {
   text-decoration: none;
 }
 
-.welcome-tab a {
-  color: #333;
-  background-color:#fff;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0.8em 4em;
+@media screen and (max-width: 1070px) {
+
 }
