@@ -91,6 +91,92 @@ h2 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1070px) {
+/*** About Section Content ***/
+.menu-1-content {
+  background-color: white;
+  border-color: white;
+  border-radius: 0 20px 20px 20px;
+  border-style: solid;
+  border-width: 4px;
+  display: none;
+  left: 566px;
+  list-style: none;
+  margin: 50px 0;
+  opacity: 0.7;
+  padding: 10px 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 330px;
+  width: 44.3%;
+}
 
+.menu-1-content p {
+  color: #333;
+  font-size: 14px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300px;
+  line-height: 160%;
+  padding: 0 15px;
+}
+
+/*** Experience Section Content ***/
+.menu-2-content {
+  background-color: white;
+  border-color: white;
+  border-radius: 0 20px 20px 20px;
+  border-style: solid;
+  border-width: 4px;
+  display: none;
+  left: 566px;
+  list-style: none;
+  margin: 50px 0;
+  opacity: 0.7;
+  padding: 10px 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 330px;
+  width: 44.3%;
+}
+/*** Portfolio Section Content ***/
+.menu-3-content {
+  background-color: white;
+  border-color: white;
+  border-radius: 0 20px 20px 20px;
+  border-style: solid;
+  border-width: 4px;
+  display: none;
+  left: 566px;
+  list-style: none;
+  margin: 50px 0;
+  opacity: 0.7;
+  padding: 10px 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 330px;
+  width: 44.3%;
+}
+
+/*** Contact Section Content ***/
+.menu-4-content {
+  background-color: white;
+  border-color: white;
+  border-radius: 0 20px 20px 20px;
+  border-style: solid;
+  border-width: 4px;
+  display: none;
+  left: 566px;
+  list-style: none;
+  margin: 50px 0;
+  opacity: 0.7;
+  padding: 10px 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 330px;
+  width: 44.3%;
+}
+
+@media screen and (max-width: 1070px) {
+  body {
+    background-image: none;
+  }
 }

@@ -19,25 +19,49 @@ var jQuery = require("./../../bower_components/jquery/dist/jquery.js");
   });
 
   $(function() {
-    var click = $('.menu-item-3, .about-close');
+    var click = $('.menu-1');
     $(click).click(function() {
-      if ($('.menu-item-4-content').is(':visible')) {
-        $('.menu-item-4-content').fadeToggle();
-        $('.menu-item-3-content').fadeToggle();
+      if ($('.menu-2-content, .menu-3-content, .menu-4-content').is(':visible')) {
+        $('.menu-2-content, .menu-3-content, .menu-4-content').hide();
+        $('.menu-1-content').fadeToggle();
       } else {
-        $('.menu-item-3-content').fadeToggle();
+        $('.menu-1-content').fadeToggle();
       }
     });
   });
 
   $(function() {
-    var click = $('.menu-item-4, .resume-close');
+    var click = $('.menu-2');
     $(click).click(function() {
-      if ($('.menu-item-3-content').is(':visible')) {
-        $('.menu-item-3-content').fadeToggle();
-        $('.menu-item-4-content').fadeToggle();
+      if ($('.menu-1-content, .menu-3-content, .menu-4-content').is(':visible')) {
+        $('.menu-1-content, .menu-3-content, .menu-4-content').hide();
+        $('.menu-2-content').fadeToggle();
       } else {
-        $('.menu-item-4-content').fadeToggle();
+        $('.menu-2-content').fadeToggle();
+      }
+    });
+  });
+
+  $(function() {
+    var click = $('.menu-3');
+    $(click).click(function() {
+      if ($('.menu-1-content, .menu-2-content, .menu-4-content').is(':visible')) {
+        $('.menu-1-content, .menu-2-content, .menu-4-content').hide();
+        $('.menu-3-content').fadeToggle();
+      } else {
+        $('.menu-3-content').fadeToggle();
+      }
+    });
+  });
+
+  $(function() {
+    var click = $('.menu-4');
+    $(click).click(function() {
+      if ($('.menu-1-content, .menu-2-content, .menu-3-content').is(':visible')) {
+        $('.menu-1-content, .menu-2-content, .menu-3-content').hide();
+        $('.menu-4-content').fadeToggle();
+      } else {
+        $('.menu-4-content').fadeToggle();
       }
     });
   });
