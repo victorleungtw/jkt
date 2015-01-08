@@ -98,6 +98,30 @@ h2 {
   border-radius: 0 20px 20px 20px;
   border-style: solid;
   border-width: 4px;
+  color: #333;
+  display: none;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size: 14px;
+  font-weight: 300px;
+  height: 330px;
+  left: 566px;
+  list-style: none;
+  line-height: 160%;
+  margin: 50px 0;
+  opacity: 0.7;
+  overflow: auto;
+  padding: 10px 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 330px;
+  width: 44.3%;
+}
+/*.menu-1-content {
+  background-color: white;
+  border-color: white;
+  border-radius: 0 20px 20px 20px;
+  border-style: solid;
+  border-width: 4px;
   display: none;
   left: 566px;
   list-style: none;
@@ -108,7 +132,7 @@ h2 {
   text-decoration: none;
   top: 330px;
   width: 44.3%;
-}
+}*/
 
 .menu-1-content p {
   color: #333;
@@ -138,7 +162,7 @@ h2 {
   width: 44.3%;
 }
 /*** Portfolio Section Content ***/
-.menu-3-content {
+.menu-2-content {
   background-color: white;
   border-color: white;
   border-radius: 0 20px 20px 20px;
@@ -154,10 +178,11 @@ h2 {
   text-decoration: none;
   top: 330px;
   width: 44.3%;
+
 }
 
 /*** Contact Section Content ***/
-.menu-4-content {
+.menu-3-content {
   background-color: white;
   border-color: white;
   border-radius: 0 20px 20px 20px;
