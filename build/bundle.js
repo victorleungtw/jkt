@@ -54,17 +54,17 @@ var jQuery = require("./../../bower_components/jquery/dist/jquery.js");
     });
   });
 
-  $(function() {
-    var click = $('.menu-4');
-    $(click).click(function() {
-      if ($('.menu-1-content, .menu-2-content, .menu-3-content').is(':visible')) {
-        $('.menu-1-content, .menu-2-content, .menu-3-content').hide();
-        $('.menu-4-content').fadeToggle();
-      } else {
-        $('.menu-4-content').fadeToggle();
-      }
-    });
-  });
+  // $(function() {
+  //   var click = $('.menu-4');
+  //   $(click).click(function() {
+  //     if ($('.menu-1-content, .menu-2-content, .menu-3-content').is(':visible')) {
+  //       $('.menu-1-content, .menu-2-content, .menu-3-content').hide();
+  //       $('.menu-4-content').fadeToggle();
+  //     } else {
+  //       $('.menu-4-content').fadeToggle();
+  //     }
+  //   });
+  // });
 })(jQuery);
 
 },{"./../../bower_components/jquery/dist/jquery.js":4}],2:[function(require,module,exports){

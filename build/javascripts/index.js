@@ -53,15 +53,15 @@ var jQuery = require('jquery');
     });
   });
 
-  $(function() {
-    var click = $('.menu-4');
-    $(click).click(function() {
-      if ($('.menu-1-content, .menu-2-content, .menu-3-content').is(':visible')) {
-        $('.menu-1-content, .menu-2-content, .menu-3-content').hide();
-        $('.menu-4-content').fadeToggle();
-      } else {
-        $('.menu-4-content').fadeToggle();
-      }
-    });
-  });
+  // $(function() {
+  //   var click = $('.menu-4');
+  //   $(click).click(function() {
+  //     if ($('.menu-1-content, .menu-2-content, .menu-3-content').is(':visible')) {
+  //       $('.menu-1-content, .menu-2-content, .menu-3-content').hide();
+  //       $('.menu-4-content').fadeToggle();
+  //     } else {
+  //       $('.menu-4-content').fadeToggle();
+  //     }
+  //   });
+  // });
 })(jQuery);
