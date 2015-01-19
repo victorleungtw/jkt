@@ -1,6 +1,5 @@
 Personal Webpage
 ==========
-<img src="https://travis-ci.org/joekteo/jkt.svg?branch=background">
 
 # TODO
 - [X] Add if else to Toggle
