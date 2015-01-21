@@ -71,5 +71,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build:dev', ['clean:dev', 'copy:assets', 'browserify:dev', 'sass']);
   grunt.registerTask('build', ['build:dev']);
-  grunt.registerTask('default', ['test']);
+  grunt.registerTask('default', ['build']);
 };
