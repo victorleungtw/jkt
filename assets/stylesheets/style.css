@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family: 'Montserrat', sans-serif;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -103,13 +104,116 @@ h2 {
 }
 
 /*** Bio ***/
-.bio h2 {
-  font-size: 12px;
+.bio-container {
+  align-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.bio p {
+.bio-summary-title {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
   font-size: 12px;
-  color: black;
+  height: 250px;
+  margin-left: 11em;
+}
+
+.bio-summary-content {
+  color: #434343;
+  flex-basis: 500px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 305px;
+  line-height: 2.5em;
+  padding-top: 4em;
+  width: 300px;
+
+}
+
+.bio-summary-right {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  width: 300px;
+}
+
+.bio-experience-title {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  margin-left: 11em;
+}
+
+.bio-experience-content {
+  color: #434343;
+  flex-basis: 500px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 305px;
+  line-height: 2.5em;
+  padding-top: 4em;
+  width: 300px;
+
+}
+
+.bio-experience-right {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  width: 300px;
+}
+
+.bio-education-title {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  margin-left: 11em;
+}
+
+.bio-education-content {
+  color: #434343;
+  flex-basis: 500px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 305px;
+  line-height: 2.5em;
+  padding-top: 4em;
+  width: 300px;
+
+}
+
+.bio-education-right {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  width: 300px;
 }
 
 @media screen and (max-width: 1070px) {
