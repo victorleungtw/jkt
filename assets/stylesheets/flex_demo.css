@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+/*** Base Elements ***/
+body {
+  background-color: #E9F0F4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+h1, h2 {
+  color: #d5d5d5;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/*** Introduction ***/
+.big-container {
+  align-items: flex-start;
+  background-image: url("../images/macbook.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -22px;
+  min-height: 913px;
+  width: 100%;
+}
+
+.logo {
+  /*border: 1px solid orange;*/
+  flex-grow: 1, flex-shrink: 1, flex-basis: 20em;
+}
+
+.logo h1 {
+  font-size: 5em;
+  font-weight: 800;
+  left: 0.262em;
+  letter-spacing: -1px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: 2.65em;
+}
+
+.sub-container {
+  /*border: 1px solid orange;*/
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  width: 55%;
+}
+
+h2 {
+  font-size: 3.438em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 3.125em;
+  padding-left: 0.57em;
+  position: relative;
+  top: 3.79em;
+}
+
+.sub-container hr {
+  background-color: #727272;
+  height: 0.5px;
+  left: 2em;
+  margin: 0;
+  padding: 0 0 1.05px 0;
+  position: relative;
+  top: 9.26em;
+  width: 85.5%;
+}
+
+/*** Navbar ***/
+.nav-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-items li {
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  left: 4.4%;
+  margin-left: 1.4%;
+  margin-right: 12.7%;
+  position: relative;
+  top: 14em;
+}
+
+.nav-items a {
+  color: #F7003F;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
+/*** Bio ***/
+.bio-container {
+  align-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bio-summary-title, .bio-experience-title, .bio-education-title {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  margin-left: 7em;
+}
+
+.bio-summary-content, .bio-experience-content, .bio-education-content {
+  color: #434343;
+  flex-basis: 500px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 305px;
+  line-height: 2.5em;
+  padding-top: 4em;
+  width: 300px;
+}
+
+.bio-summary-right, .bio-experience-right, .bio-education-right {
+  color: #434343;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  height: 250px;
+  padding-left: 10em;
+  width: 300px;
+}
+
+@media screen and (max-width: 1070px) {
+  .big-container {
+    background-image: none;
+  }
+}
