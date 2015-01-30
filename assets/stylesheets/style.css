@@ -232,6 +232,17 @@ h2 {
 }
 
 /*** Education ***/
+#education-icon {
+  color: white;
+  margin-left: 20px;
+  margin-top: 38px;
+}
+
+/*.fabook {
+  z-index: 1;
+  font-size: 80px;
+}
+*/
 .education-title {
   align-content: center;
   align-items: center;
@@ -364,6 +375,10 @@ h2 {
 }
 
 .pc-item-5 {
+  padding: 30px;
+}
+
+.pc-item-6 {
   padding: 30px;
   margin: 0 auto;
 }

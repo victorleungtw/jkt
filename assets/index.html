@@ -17,6 +17,8 @@
   <script src="./javascripts/portfoliojs/js/portfolio.pack.min.js"></script>
   <script type="text/javascript" src="bundle.js"></script>
   <script type="text/javascript" src="javascripts/pace.min.js"></script>
+  <srcipt src="javascripts/wow.min.js"></script>
+  <script src="javascripts/wow.js"></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -48,12 +50,12 @@
     </nav>
 
     <div class="greetings-container">
-      <h3 class="animated fadeInDown">About</h3>
+      <h3 class="animated wow fadeInDown" data-wow-delay="1s" -webkit-animation-delay: 1s;>About</h3>
       <p class="animated fadeInDown">Hello! My name is Joe Teo and I am a full-stack web developer with a background in art, education, and business development. I am passionate about building robust web applications using clean codes and best practices to ensure the quality of my products. I began coding in May 2014 and have had experience working on multiple dev teams with iOS developers, UX designers, and developers in various countries. I am very interested in learning the newest frameworks and tools as well as UX/UI aspects of web development.</p>
     </div>
 
     <div class="experience-title">
-      <h3>Experience</h3>
+      <h3 class="wow bounceInLeft animated" style="visibility: visiable;" data-wow-offset="2">Experience</h3>
     </div>
     <div class="experience-container">
       <div class="rails-girls">
@@ -67,9 +69,11 @@
     </div>
 
     <div class="education-title">
-      <h3>Education</h3>
+      <h3 class="wow bounceInRight animated" style="visibility: visiable;" data-wow-offset="2">Education</h3>
+      <i class="fa fa-book fa-4x wow bounceInLeft animated" style="visibility: visiable;" data-wow-offset="2" id="education-icon"></i>
     </div>
     <div class="education-container">
+      <!-- <i class="fa fa-book fa-5x" id="fabook"></i> -->
       <img src="images/temple.png" class="ec-item-1">
       <br>
       <p>Digital Media, Bachelor of Art</p>
@@ -89,8 +93,9 @@
       <img src="images/abramhealth0.png" class="pc-item-2">
       <img src="images/omdb_angular.png" class="pc-item-3">
       <img src="images/chattr.png" class="pc-item-4">
-      <img src="images/musicholic1.png" height="432" width="288" class="pc-item-5">
-      <!-- <img src="images/musicholic2.png" height="432" width="288" class="pc-item-6"> -->
+      <img src="images/ripple1.png"class="pc-item-5">
+      <img src="images/musicholic1.png" height="432" width="288" class="pc-item-6">
+      <!-- <img src="images/musicholic2.png" height="326" width="600" class="pc-item-6"> -->
     </div>
 
     <div class="contact-container">
@@ -108,5 +113,9 @@
     </div>
 
   </div>
+<script>
+'use strict';
+new WOW().init();
+</script>
 </body>
 </html>

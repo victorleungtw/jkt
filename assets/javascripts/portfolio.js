@@ -1,6 +1,7 @@
 /*jslint browser:true */
 'use strict';
 
+var $ = require('jquery');
 // var jQuery = require('jquery');
 
 (function() {
